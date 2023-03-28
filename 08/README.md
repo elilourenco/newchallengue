@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 - https://bennettfeely.com/clippy/
 
-## 📚 O que aprendemos nesse desafio
+## 📚 O que aprendi nesse desafio
 
 ```md
 # CSS
@@ -61,7 +61,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - linearGradient
 ```
 
-## 🍩 Estudos sobre Donut Chart
+
 
 https://www.fronteditor.dev/gists/e7d5a452582ebe081f81dee776bca246/view
 
@@ -69,10 +69,7 @@ https://www.fronteditor.dev/gists/e7d5a452582ebe081f81dee776bca246/view
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1210217615683203825). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+
