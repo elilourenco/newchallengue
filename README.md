@@ -4,7 +4,7 @@ never stpo learning
 
 <p align="center">
   
-    This is the projectos about the news challengs
+    This is the projectos about the news challengs!!
     <br><table>
     <thead>
         <tr>
