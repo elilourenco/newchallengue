@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form of the debit card</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="import" href="function.js">
 </head>
 <body>
   <form >
     <section id="credit-card">
-      <div class="front"></div>
+      <div class="front">
+      </div>
       <div class="back"></div>
     </section>
-    <section class="inputs">
+    <section class="inputs flex">
       <div class="input-wrapper">
         <label for="cc-number" class="">Número do cartão</label>
         <input type="text" 
@@ -26,11 +31,46 @@
         <label for="cc-holder">Nome do titular</label>
         <input type="text" 
         id="cc-holder"
-        placeholder="Nome como está no cartão">
+        placeholder="Nome como está no cartão"
+        required>
+        <div class="warning">
+          <img src="https://i.ibb.co/5F8JwNR/Vector-2.png" alt="icon alert">
+          Nome do titular e obrigatorio
+        </div>
+      </div>
+
+      <div class="col-2 flex">
+        <div class="wrapper">
+          <label for="cc-validity">Validation</label>
+          <input type="text"
+           id="validity"
+           placeholder="mm/aa">
+        </div>
+
+        <div class="wrapper">
+          <label for="cc-cvv" class=" flex help">CVV 
+            <img
+            src="https://i.ibb.co/8z6t3dH/Vector.png"
+            alt="help icon"
+            title="this number is always , in the  back of the your card"
+            >
+          </label>
+          <input id="cc-cvv"
+          type="text"
+          placeholder="***">
+        </div>
       </div>
     </section>
 
+    <section class="info-security flex">
+      <img src="https://i.ibb.co/9GPngNQ/Vector-1.png" alt="icon of the security">
+        Seus dados estão seguros
+    </section>
+    <button>Add new card</button>
+
     
   </form>
+
+  <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

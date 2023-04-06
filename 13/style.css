@@ -15,6 +15,11 @@ body{
   background: #1F2937;
 }
 
+body, input ,button{
+   font-size: 1.6rem;
+font-family: 'Source Sans Pro', sans-serif;
+
+}
 form{
   
   padding: 2.4rem;
@@ -43,9 +48,7 @@ form{
 
 }
 
-.inputs{
-  margin-top: 4.8rem;
-}
+
 
 
 #credit-card .front{
@@ -73,3 +76,99 @@ form{
 
 }
 
+.flex{
+  display: flex;
+}
+
+.inputs{
+  margin-top: 4.8rem;
+  flex-direction: column;
+  gap: 2.4rem;
+
+}
+
+label{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #E5E7ED;
+  gap: .4rem;
+  align-items: center;
+}
+
+input{
+  margin-top: .4rem;
+  width: 100%;
+font-family: 'Sourece San Prok';
+padding: 1.2rem;
+border: .1rem solid #374151;
+background: #111827;
+border-radius: 0.4rem;
+color: #F3F4F6;
+}
+
+input:focus{
+  border: 0.15rem solid #9333FA;
+}
+
+input:invalid:focus{
+  border: 0.15rem solid #FB7185;
+}
+input + .warning{
+  display: none;
+}
+
+input:invalid:focus + .warning{
+  font-size: 1.4rem;
+  margin-top: .8rem;
+  color: #FB7185;
+
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.col-2{
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.col-2 .input-wrapper:nth-child(2){
+  flex-basis: 40%;
+}
+
+.help img{
+  width: 1.6rem;
+  height: 1.6rem;
+
+
+}
+
+.info-security{
+  margin-top: 4.8rem;
+  justify-content: center;
+  gap: .8rem;
+  font-size: 1.4rem;
+  color:#E5E7EB ;
+}
+
+button{
+  margin-top: 10rem;
+  border: none;
+  padding: 1.6rem;
+  width: 100%;
+  background: #9333EA;
+
+  box-shadow: 0rem 4rem 16rem rgba(0, 0, 0, 0.1);
+border-radius: .4rem;
+font-weight: 600;
+font-size: 1.8rem;
+line-height: 2.4rem;
+color: #F9FAFB;
+
+cursor: pointer;
+transition: background .2s;
+}
+
+button:hover{
+  background: #A855F7;
+}
