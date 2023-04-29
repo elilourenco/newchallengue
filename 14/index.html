@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload componentk</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link href="style.css" rel="stylesheet">
+
+  
+</head>
+<body>
+  <div id="app">
+    <section class="drag-files">
+      <i class="ph ph-cloud-arrow-up"></i> 
+      <h3>Import your files</h3>
+      <p>Put of the do your files</p>
+      <input type="file" name="" id="">
+    </section>
+    <section class="files ">
+      <div class="box uploading">
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">Scann_158.pdf</div>
+          <div class="filesize">
+            <span>38 MB</span>
+             <span>70 MB</span>
+          </div>
+          <div class="bar">
+            <progress value="46" max="100"></progress>
+          </div>
+        </div>
+        <div class="action">
+          <i class="ph ph-x"></i>
+        </div>
+      </div>
+      <div class="box done">
+
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">README.rm</div>
+          <div class="filesize">
+      
+             <span>12 KB</span>
+          </div>
+          <div class="bar">
+            <progress value="100" max="100"></progress>
+            <span>100%</span>
+          </div>
+        </div>
+        
+
+
+      </div>
+      <div class="box error">
+        
+
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">picture1.jpeg</div>
+          <div class="filesize">
+             <span>6.3 MB</span>
+          </div>
+          <div class="bar">
+            <progress value="0" max="100"></progress>
+            <span>Erro</span>
+          </div>
+        </div>
+        <div class="action">
+          <i class="ph ph-arrow-counter-clockwise"></i>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  
+</body>
+</html>
