@@ -14,6 +14,7 @@ IMask(document.querySelector("cc-validity"), {
     MM: {
       mask: IMask.MaskedRange,
       from: 1,
+      
       to: 12,
     },
     YY: {
