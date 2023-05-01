@@ -2,237 +2,205 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-:root {
- --color-gray-50: #f8fafc;
- --color-gray-100: #f1f5f9;
- --color-gray-200: #e2e8f0;
- --color-gray-300: #cbd5e1;
- --color-gray-400: #94a3b8;
- --color-gray-500: #64748b;
- --color-gray-600: #475569;
- --color-gray-700: #334155;
- --color-gray-800: #1e293b;
- --color-gray-900: #0f172a;
- --color-green-100: #04d361;
- --color-green-200: #1b873f;
- --color-purple-100: #996dff;
- --color-purple-200: #7c3aed;
- --color-white: #ffffff;
- --color-orange: #fba94c;
+html,body,input{
+  font-family: 'Roboto';
 }
-
-
-
-html, body{
-  font-family: 'Inter', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-
-background-color: var(--color-gray-300);
-}
-
-.pricing-table{
-  display: grid;
-  gap: 24px;
-  padding: 24px;
-
-}
-
-section{
-  width: 320px;
-margin: auto;
-/* White */
-
-
-}
-
-section .inner{
-  padding: 24px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray-200);
-  border-radius: 10px;
-}
-
-.inner p{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.06rem;
-  text-transform: uppercase;
-  color: var(--color-purple-200);
-}
-
-.title-price{
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 37px;
-  color: var(--color-gray-800);
-}
-.price{
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--color-gray-800);
-}
-
-.price strong{
-  font-size: 20px;
-  line-height: 30px;
-}
-
-button{
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  width: 100%;
-  border: 1px solid #1E293B;
-
-  border-radius: 4px;
-  margin-top: 16px;
-  font-weight: 700;
-
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-gray-800);
-
-  cursor: pointer;
-
-}
-
-button.primary:hover{
-  background-color: #1E293B;
-  color: var(--color-white);
+html,body{
+  overflow: hidden;
 }
 
 ul{
-  border-top: 1px solid var(--color-gray-200);
-  padding-top: 16px;
-  margin-top: 16px;
   list-style: none;
+  
+}
+body{
 
-  display: grid;
+  color: #E1E1E6;
+
+  background-color: #1A1924;
+
+}
+
+header{
+  background-color: #16151E;
+}
+.flex{
+  display: flex;
+}
+
+.container{
+  padding: 40px;
+}
+
+.items-center{
+  align-items: center ;
+}
+
+header h2{
+  font-size: 20px;
+  line-height: 23px;
+}
+
+nav{
+  justify-content: space-between;
+}
+
+nav ul{
+  gap:16px;
+}
+
+nav ul li{
+  font-size: 24px;
+}
+
+ form{
+  margin-top: 24px;
+ }
+
+ .sr-only{
+  position: absolute;
+  width:1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+ }
+
+ .input-wrapper{
+  
+  gap: 10px;
+  background: #24243D;
+  border-radius: 5px;
+  padding: 16px 24px;
+ }
+
+ .input-wrapper input{
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #E1E1E6;
+
+ }
+
+ .input-wrapper ion-icon{
+  font-size: 14px;
+
+ }
+
+ .input-wrapper input::placeholder{
+  color: #E1E1E6;
+ }
+
+ .input-wrapper:focus-within{
+
+  outline: 2px white solid;
+
+ }
+
+ .contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
+  height: 75vh;
+  overflow: scroll;
+ }
+ .contacts::-webkit-scrollbar{
+  width: 8px;
+
+ }
+
+ .contacts::-webkit-scrollbar-thumb{
+  background: #282843;
+  border-radius: 999px;
+
+ }
+
+
+
+ .letter{
+  background-color: var(--color);
+  width:40px;
+  height:48px;
+  display:flex;
+  align-items:center;
+  border-radius:8px;
+  margin-right:52px;
+  font-weight:700;
+  font-size:16px;
+
+  line-height:19px;
+ }
+
+ .purple{
+  --color:#633BBC;
+ }
+
+ .green{
+  --color:#07847E;
+ }
+ .pink{
+  --color:#9A00B3;
+ }
+
+ .blue{
+  --color:#0088B3;
+ }
+
+ .yellow{
+  --color:#B38C00;
+ }
+
+ .person{
   gap: 16px;
 
-}
+ }
 
-li{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+ .person img{
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+ }
 
-li span{
-   flex:1;
-   font-size: 16px;
-   line-height: 24px;
-   letter-spacing: 0.06rem;
-
-   color: var(--color-gray-600);
-}
-
-li i.ph-check{
-  font-size: 20px;
-  color: var(--color-green-200);
-
-}
-
-li i.ph-info{
-  font-size: 16px;
-  color: var(--color-gray-900);
-}
-
-.enterprise .title{
- 
-font-size: 32px;
-line-height: 49px;
-}
-
-.enterprise button{
-  margin-top: 32px;
-}
-
-.enterprise ul{
-  padding-top: 32px;
-  margin-top: 32px;
-}
-section.best{
-  position: relative;
-  margin-top: 16px;
-}
-
-section.best::before{
-  content: "More Advantages";
+ .person h5{
   font-weight: 700;
-  font-size: 12PX;
-  line-height: 18px;
-  letter-spacing: 0.06rem;
-  text-transform: uppercase;
-
-  color: var(--color-gray-900);
-  display: inline-block;
-
-  background-color: #FBA94C;
-border-radius: 6px;
-padding: 8px 16px;
-position: absolute;
-left: 50%;
-
-transform: translate(-50%);
-
-top: -17px;
+  font-size: 16px;
+  line-height: 19px;
 
 
-}
+ }
 
-.ultimate .inner{
-  padding: 40px;
-  background-color: var(--color-gray-900);
-}
+ .person p{
+  font-size: 12px;
+  line-height: 14px;
+  color: #BCBCBA;
 
-.ultimate .title,
-.ultimate .price{
-  color: var(--color-gray-50);
-}
+  margin-top: 4px;
+ }
 
-.inner p{
-  
-  color: var(--color-purple-100);
-}
+ .list-wrapper ul{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+ }
 
-button.secondary{
-  background-color: var(--color-purple-100);
-  color: var(--color-white);
-}
+ header nav,
+ header form,
+ .list-wrapper{
+  max-width: 350px;
 
-button.secondary:hover{
-  background-color: var(--color-purple-200);
-   color: var(--color-white);
-}
-
-.ultimate ul{
-  border-color: var(--color-gray-700);
-}
-
-.ultimate li span{
-  color: var(--color-gray-300);
-}
-.ultimate li .ph-info{
-  color: var(--color-gray-500);
-}
-
-section .inner:hover{
-  border-color: var(--color-purple-100);
-}
-
-section  .inner{
-  transition: border 300ms;
-}
+  width: 100%;
+  margin-inline: auto;
+ }

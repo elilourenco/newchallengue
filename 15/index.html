@@ -13,90 +13,158 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-     <div class="pricing-table">
-      <section class="essentials  ">
-        <div class="inner">
-          <p>For you begin</p>
-          <div class="title-price">
-            <strong class="title">Essentials</strong>
-            <span class="price">R$  <strong>19,97/mês</strong> </span>
-          </div>
-        
-          <button class="primary">Confirm New</button>
-          <ul>
-          <li>
-            <i class="ph ph-check"></i>
-            <span>Until 3 users</span>
-            <i class="ph ph-info"></i>
-          </li>
+
+    <header class="container">
+      <nav class="flex items-center">
+        <h2>
+          My Contacts
+        </h2>
+
+        <ul class="flex items-center">
 
           <li>
-            <i class="ph ph-check"></i>
-            <span>Until 3 users</span>
-            <i class="ph ph-info"></i>
-          </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="ultimate best">
-        <div class="inner">
-          <p>For you to take off</p>
-          <div class="title-price">
-            <strong class="title">Ultimate</strong>
-            <span class="price">R$  <strong>29,97/mês</strong></span>
-          </div>
-          <button class="secondary">Confirm New</button>
-
-          <ul>
-          <li>
-            <i class="ph ph-check"></i>
-            <span>Until 3 users</span>
-            <i class="ph ph-info"></i>
-          </li>
-
-          <li>
-            <i class="ph ph-check"></i>
-            <span>24/7 support</span>
-            <i class="ph ph-info"></i>
-          </li>
-
-          <li>
-            <i class="ph ph-check"></i>
-            <span>Dedicated CSM</span>
-            <i class="ph ph-info"></i>
-          </li>
-
-          <li>
-            <i class="ph ph-check"></i>
-            <span>Trainings</span>
-            <i class="ph ph-info"></i>
-          </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="enterprise">
-        <div class="inner">
-          <p>For you company</p>
-          <div class="title-price">
-            <strong class="title">Enterprise</strong>
-           
-          </div>
+          <ion-icon name="add"></ion-icon>
           
+        </li>
+
+        <li>
+          <ion-icon name="pencil"></ion-icon>
+          
+        </li>
+
+        <li>
+          <ion-icon name="trash"></ion-icon>
+          
+        </li>
+
+        </ul>
+
         
-          <button class="primary">Talk to us</button>
-          <ul>
+      </nav>
+      <form action="">
+        <div class="input-wrapper flex items-center">
+          <label class="sr-only" for="filter">
+            Search by name or contact details...
+          </label>
+
+           <ion-icon name="search-outline"></ion-icon>
+
+          <input
+           id="filter"
+           type="text"
+           placeholder="Search by name or contact details...">
+        </div>
+
+      </form>
+
+    </header>
+
+    <section class="contacts container">
+      <div class="list-wrapper flex">
+        <div class="letter purple">
+          <p class="letter">A</p>
+        </div>
+        <ul>
           <li>
-            <i class="ph ph-check"></i>
-            <span>Customized plan especially for the needs of your business</span>
-            <i class="ph ph-info"></i>
+            <div class="person flex">
+              <img src="./task.svg" alt="">
+              <div class="contact">
+                <h3>Abraão</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+       <div class="list-wrapper flex">
+        <div class="letter green">
+          B
+        </div>
+        <ul>
+          <li>
+            <div class="person flex">
+              <img src="./finally.svg" alt="">
+              <div class="contact">
+                <h3>Lucas</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
           </li>
 
-         
-          </ul>
+          <li>
+            <div class="person flex">
+              <img src="./softenginner.svg" alt="">
+              <div class="contact">
+                <h3>Sergio</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-wrapper flex">
+        <div class="letter purple">
+          <p class="letter">A</p>
         </div>
-      </section>
-     </div>
+        <ul>
+          <li>
+            <div class="person flex">
+              <img src="./task.svg" alt="">
+              <div class="contact">
+                <h3>Milena</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+       <div class="list-wrapper flex">
+        <div class="letter pink">
+          C
+        </div>
+        <ul>
+          <li>
+            <div class="person flex">
+              <img src="./finally.svg" alt="">
+              <div class="contact">
+                <h3>Joao</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="person flex">
+              <img src="./softenginner.svg" alt="">
+              <div class="contact">
+                <h3>Elizandra</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-wrapper flex">
+        <div class="letter blue">
+          <p class="letter">D</p>
+        </div>
+        <ul>
+          <li>
+            <div class="person flex">
+              <img src="https://randomuser.me/api/portraits/men/5.jpg" />
+              <div class="contact">
+                <h3>Elias</h3>
+                <p>(11) 90876-1234</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </body>
-</html>
+</html>  
